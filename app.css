@@ -38,7 +38,7 @@
   }
   
   li.nav {
-    float: center;
+    float: none;
     display: inline-block;
     text-align: center;
     padding: 0.5em 1em;
@@ -117,4 +117,8 @@
   
   h3 {
     padding: 0em 0em;
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
