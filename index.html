@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Website</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Manuel Staffa</h1>
+    <nav>
+      <ul class="nav">
+        <li class="nav"><a href="#school">Schule</a></li>
+        <li class="nav"><a href="#activities">Aktivitäten</a></li>
+        <li class="nav"><a href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="sidebar box">
+      <p>Hallo!<br> Ich heiße Manuel Staffa, bin momentan 16 Jahre alt und Schüler am Goethe-Gymnasium Bensheim. Ich wurde am 30.03.2002 in Heppenheim im Bundesland Hessen geboren und lebe in Lorsch, das ebenfalls in Hessen liegt.
+        <br> Ich interessiere mich sehr für die Informatik, meinem Lieblingsfach in der Schule und eins meiner Hobbies. Alleine oder zusammen mit einem Freund habe ich schon einige kleine Spiele mit der Programmiersprache GML entwickelt. Außerdem reise
+        ich gerne, da ich die anderen Landschaften und Kulturen interssant finde.</p>
+    </div>
+
+    <div class="box">
+      <h2 id="school">Schule</h2>
+      <h3>Wingertsbergschule Lorsch</h3>
+      <p>2008-2012</p>
+
+      <h3>Goethe-Gymnasium Bensheim</h3>
+      <ul class="list">
+        <li>Seit 2012</li>
+        <li>ab 7. Klasse: bilingualer Unterricht in den Fächern Erdkunde und Geschichte</li>
+        <li>7.-9. Klasse: Jugend Forscht AG</li>
+        <li>9. Klasse DELF Zertifikat - Französisch B2</li>
+        <li>10. Klasse Camebridge Certificate of English</li>
+        <li>ab Q1: Informatik- und Englisch LK</li>
+      </ul>
+
+      <p><strong>Schülerpraktikum im Naturschutzzentrum Bensheim</strong>
+        <br>Juli 2016</p>
+      <p><strong>Schüleraustausch nach Schweden</strong>
+        <br>Oktober 2016, Januar 2017</p>
+      <p><strong>Studienfahrt nach Berlin</strong>
+        <br>Oktober 2017</p>
+      <p><strong>Praktikum bei Ueberbit</strong>
+        <br>Januar 2019</p>
+    </div>
+
+    <div class="box">
+      <h2 id="activities"><strong>Aktivitäten</strong></h2>
+      <p><strong>DLRG Viernheim</strong>
+        <br>2008-2014</p>
+      <p><strong>Leichtathletik</strong>
+        <br>2009-2012</p>
+      <p><strong>Tennis bei der TCO Lorsch</strong>
+        <br>2009-2013</p>
+      <p><strong>DPSG Lorsch</strong>
+        <br>Seit 2010</p>
+      <p><strong>DLRG Bensheim</strong>
+        <br>Rettungsschwimmer Bronze/Silber, Tauchabzeichen
+        <br>Seit 2016</p>
+      <p><strong>Tanzkurse</strong>
+        <br>Anfänger, Fortgeschrittene, Bronze, Silber, Gold
+        <br>Seit 2017</p>
+      <p><strong>Sprachreise nach Oxford</strong>
+        <br>August 2018</p>
+    </div>
+
+    <div class="box">
+      <address>
+      <h2 id="contact"><strong>Kontakt</strong></h2>
+      <p>Adresse: Straße Hausnummer, Postleitzahl Ort
+        <br>Telefon: <a href=tel:"0000000000">Vorwahl Telefonnummer</a>
+        <br>E-Mail: <a href="mailto:entemail@gamil.com">E-mail Adresse</a></p>
+      </address>
+    </div>
+
+    <div class="box">
+      <form action="/action_page.php"></form>
+      Versuche die zufällige Zahl zwischen 1 und <input type="number" id="amount" min="1" max="1000" value="100"></input> zu erraten. Du hast <input type="number" id="difficulty" min="1" max="50" value="7"></input> Versuch(e) und bekommst nach jeder Runde
+      die Information, ob deine Zahl zu groß oder zu klein war. Viel Spaß!<br><br> Vermutung:
+      <br>
+      <input type="number" id="input" min="1" max="100" style="width: 12em;"></input>
+      <br>
+      <input type="button" onclick="check()"> Senden</input><br>
+      <br>
+      <p class="history"></p>
+      <p class="result" id="result"></p>
+      <p class="low_high"></p><br>
+      <input type="button" onclick="reset()"> Zurücksetzen</input>
+      </form>
+
+    </div>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
