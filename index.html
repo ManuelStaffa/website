@@ -87,14 +87,14 @@
       Versuche die zufällige Zahl zwischen 1 und <input type="number" id="amount" min="1" max="1000" value="100"></input> zu erraten. Du hast <input type="number" id="difficulty" min="1" max="50" value="7"></input> Versuch(e) und bekommst nach jeder Runde
       die Information, ob deine Zahl zu groß oder zu klein war. Viel Spaß!<br><br> Vermutung:
       <br>
-      <input type="number" id="input" min="1" max="100" style="width: 12em;"></input>
+      <input type="number" id="input" min="1" max="100" style="width: 12em"></input>
       <br>
-      <input type="button" id="submit"> Senden</input><br>
+      <button type="button" id="submit" onclick="check()"> Senden</button><br>
       <br>
       <p class="history"></p>
       <p class="result" id="result"></p>
       <p class="low_high"></p><br>
-      <input type="button" onclick="reset()"> Zurücksetzen</input>
+      <button type="button" onclick="reset()"> Zurücksetzen</button>
       </form>
 
     </div>

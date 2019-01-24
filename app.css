@@ -1,124 +1,130 @@
 :root {
-    --darkgray: #1e1f21;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  main {
-    color: white;
-    font-family: "Courier New", Corier, serif;
-    font-size: 110%;
-    line-height: 1.5;
-  }
-  
-  header {
-    color: white;
-    background-color: var(--darkgray);
-    font-family: "Courier New", Corier, serif;
-    font-size: 110%;
-    line-height: 1.5;
-  }
-  
-  body {
-    background-color: var(--darkgray);
-    margin: 0 auto;
-    max-width: 2000px;
-  }
-  
-  ul.nav {
-    list-style-type: none;
-    background-color: #333;
-  }
-  ul.list {
-    list-style-type: square;
-    padding: 0.1em 2em;
-  }
-  
+  --darkgray: #1e1f21;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  color: white;
+  font-family: "Courier New", Corier, serif;
+  font-size: 110%;
+  line-height: 1.5;
+}
+
+header {
+  color: white;
+  background-color: var(--darkgray);
+  font-family: "Courier New", Corier, serif;
+  font-size: 110%;
+  line-height: 1.5;
+}
+
+body {
+  background-color: var(--darkgray);
+  margin: 0 auto;
+  max-width: 2000px;
+}
+
+ul.nav {
+  list-style-type: none;
+  background-color: #333;
+}
+ul.list {
+  list-style-type: square;
+  padding: 0.1em 2em;
+}
+
+li.nav {
+  float: none;
+  display: inline-block;
+  text-align: center;
+  padding: 0.5em 1em;
+  padding-left: 2em;
+  text-decoration: none;
+}
+@media only screen and (min-width: 480px) {
   li.nav {
-    float: none;
-    display: inline-block;
-    text-align: center;
     padding: 0.5em 1em;
     padding-left: 2em;
-    text-decoration: none;
   }
-  @media only screen and (min-width: 480px) {
-    li.nav {
-      padding: 0.5em 1em;
-      padding-left: 2em;
-    }
+}
+@media only screen and (min-width: 550px) {
+  li.nav {
+    padding: 0.5em 2em;
+    padding-left: 2em;
   }
-  @media only screen and (min-width: 550px) {
-    li.nav {
-      padding: 0.5em 2em;
-      padding-left: 2em;
-    }
-  }
-  
-  a:link {
-    color: white;
-    text-decoration: none;
-  }
-  a:visited {
-    color: #b3b5b7;
-  }
-  a:hover, a:active {
-    background-color: #6b7177;
-  }
-  
-  .box {
-    border: 0.1em solid white;
-    padding: 1.5em;
-    width: 50%;
-    float: center;
-    margin: 1.5em;
-    border-radius: 0.4em;
-    min-width: 20em;
-    max-width: 35em;
-  }
-  @media only screen and (min-width: 440px) {
-    .box {
-      padding: 1.5em;
-      margin: 1.5em;
-    }
-  }
-  
-  .sidebar {
-    left: 59%;
-  }
-  @media only screen and (min-width: 440px) {
-    .sidebar {
-      padding: 1.5em;
-    }
-  }
-  @media only screen and (min-width: 1080px) {
-    .sidebar {
-      margin: 0;
-      width: 33%;
-      position: fixed;
-    }
-  }
-  
-  p {
-    padding: 0em 0em;
-  }
-  
-  h1 {
-    color: #d17900;
-    padding: 0.4em 1em;
-  }
-  
-  h2 {
-    padding: 0em 0em;
-  }
-  
-  h3 {
-    padding: 0em 0em;
-  }
+}
 
-  html {
-    scroll-behavior: smooth;
+a:link {
+  color: white;
+  text-decoration: none;
+}
+a:visited {
+  color: #b3b5b7;
+}
+a:hover,
+a:active {
+  background-color: #6b7177;
+}
+
+.box {
+  border: 0.1em solid white;
+  padding: 1.5em;
+  width: 50%;
+  float: center;
+  margin: 1.5em;
+  border-radius: 0.4em;
+  min-width: 20em;
+  max-width: 35em;
+}
+@media only screen and (min-width: 440px) {
+  .box {
+    padding: 1.5em;
+    margin: 1.5em;
   }
+}
+
+.sidebar {
+  left: 59%;
+}
+@media only screen and (min-width: 440px) {
+  .sidebar {
+    padding: 1.5em;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .sidebar {
+    margin: 0;
+    width: 33%;
+    position: fixed;
+  }
+}
+
+p {
+  padding: 0em 0em;
+}
+
+h1 {
+  color: #d17900;
+  padding: 0.4em 1em;
+}
+
+h2 {
+  padding: 0em 0em;
+}
+
+h3 {
+  padding: 0em 0em;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  width: 10em;
+  height: 2em;
+}
