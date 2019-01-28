@@ -1,3 +1,4 @@
+//NumberGame
 if (window.attachEvent) {
   window.attachEvent("onload", reset);
 } else if (window.addEventListener) {
@@ -69,10 +70,7 @@ function check() {
       document.getElementById("result").style.backgroundColor = "green";
       low_high.textContent = "Du hast gewonnen.";
       gameOver();
-    } else if (
-      turn <
-      parseInt(document.getElementById("difficulty").value)
-    ) {
+    } else if (turn < parseInt(document.getElementById("difficulty").value)) {
       result.textContent = "FALSCH";
       document.getElementById("result").style.backgroundColor = "red";
       if (guess > random) {
