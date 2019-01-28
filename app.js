@@ -81,6 +81,7 @@ function check() {
         low_high.textContent = "zu niedrig";
       }
     } else {
+      document.getElementById("result").style.backgroundColor = "red";
       result.textContent = "Du hast verloren. n00b.";
       gameOver();
     }
@@ -97,7 +98,6 @@ function check() {
 }
 
 function gameOver() {
-  debugger;
   document.getElementById("input").value = "";
   document.getElementById("submit").disabled = true;
   turn = 0;
@@ -107,7 +107,6 @@ function reset() {
   history.textContent = "Versuche: ";
   low_high.textContent = "";
   result.textContent = "";
-  document.getElementById("input").value = "";
   document.getElementById("submit").disabled = false;
 
   random =
