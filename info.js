@@ -21,59 +21,24 @@ ajax_get("https://api.spacexdata.com/v3/launches/next", function(data) {
   console.log(data);
   var html = "";
   debugger;
-  html += "<h2>" + "Next Launch: " + data.mission_name + "</h2>";
-  html +=
-    "<br>" +
-    "<p>" +
-    "<strong>" +
-    "Rocket name" + "<br>" +
-    "</strong>" +
-    data.rocket.rocket_name +
-    "</p>";
-  html +=
-    "<p>" +
-    "<strong>" +
-    "Payload" + "<br>" +
-    "</strong>" +
-    data.rocket.second_stage.payloads[0].payload_id +
-    "<br>" +
-    "from " +
-    data.rocket.second_stage.payloads[0].customers +
-    "<br>" +
-    "in " +
-    data.rocket.second_stage.payloads[0].nationality;
-  ("</p>");
-  html +=
-    "<p>" +
-    "<strong>" +
-    "Flight Number" + "<br>" +
-    "</strong>" +
-    data.flight_number +
-    "</p>";
-  html +=
-    "<p>" +
-    "<strong>" +
-    "Launch Year" + "<br>" +
-    "</strong>" +
-    data.launch_year +
-    "</p>";
-  html +=
-    "<p>" +
-    "<strong>" +
-    "Launch Date" + "<br>" +
-    "</strong>" +
-    data.launch_date_local +
-    "</p>";
-  html +=
-    "<p>" +
-    "<strong>" +
-    "Launch Site" + "<br>" +
-    "</strong>" +
-    data.launch_site.site_name_long +
-    " (" +
-    data.launch_site.site_name +
-    ")" +
-    "</p>";
+  html += "<h2>" + "Next SpaceX Launch: " + data.mission_name + "</h2>";
+  html += `<br><p><strong> Rocket Name <br></strong> ${
+    data.rocket.rocket_name
+  } </p>`;
+  html += `<p><strong> Payload <br></strong> ${
+    data.rocket.second_stage.payloads[0].payload_id
+  } <br>
+     from ${data.rocket.second_stage.payloads[0].customers} <br>
+     in ${data.rocket.second_stage.payloads[0].nationality} </p>`;
+  html += `<p><strong> Flight Number <br></strong> ${data.flight_number} </p>`;
+  html += `<p><strong> Launch Year <br></strong> ${data.launch_year} </p>`;
+  html += `<p><strong> Launch Date <br></strong> ${
+    data.launch_date_local
+  } </p>`;
+  html += `<p><strong> Launch Site <br></strong> ${
+    data.launch_site.site_name_long
+  } 
+    (${data.launch_site.site_name}) </p>`;
 
   document.getElementById("content").innerHTML = html;
 
